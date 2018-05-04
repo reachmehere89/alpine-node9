@@ -32,10 +32,14 @@ RUN set -x \
 
 RUN apk --no-cache add --virtual native-deps \
   g++ gcc libgcc libstdc++ linux-headers make python && \
-  rm -rf node_modules &&\
-  npm install --quiet node-gyp -g &&\
-  npm install bower -g &&\
-  npm install node-gyp -g
+  rm -rf node_modules && \
+  npm install --quiet node-gyp -g && \
+  npm install --quiet bower -g && \
+  npm install --quiet grunt-cli -g && \
+  npm install --quiet grunt@0.4.4 -g && \
+  npm install --quiet grunt-shell-spawn@0.3.10 -g && \
+  npm install --quiet grunt-protractor-runner@3.2.0 -g && \
+  npm install --quiet grunt-protractor-webdriver -g
   #npm install phantomjs -g &&\
   #npm install phantomjs-prebuilt@2.1.14 --ignore-scripts &&\
   #npm install -g karma-cli &&\
