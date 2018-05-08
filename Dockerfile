@@ -39,11 +39,11 @@ RUN apk --no-cache add --virtual native-deps \
   npm install --quiet grunt@0.4.4 -g && \
   npm install --quiet grunt-shell-spawn@0.3.10 -g && \
   npm install --quiet grunt-protractor-runner@3.2.0 -g && \
-  npm install --quiet grunt-protractor-webdriver -g
+  npm install --quiet grunt-protractor-webdriver -g && \
   #npm install phantomjs -g &&\
   #npm install phantomjs-prebuilt@2.1.14 --ignore-scripts &&\
   #npm install -g karma-cli &&\
   #npm rebuild
-  #npm --add-python-to-path='true' --debug install --global windows-build-tools
+  npm install windows-build-tools -g
   #npm install --bower
   #apk del native-deps
